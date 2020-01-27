@@ -20,7 +20,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": true
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
       "pessoa": "PJ",
       "produto": "Campanha",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": false
     },
     {
       "id": 3,
@@ -64,7 +64,7 @@
       "pessoa": "PF",
       "produto": "campanha",
       "financiamento": "cdc",
-      "status": "Inativo"
+      "status": true
     },
     {
       "id": 4,
@@ -86,7 +86,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": false
     },
     {
       "id": 5,
@@ -108,7 +108,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": true
     },
     {
       "id": 1,
@@ -130,7 +130,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": false
     },
     {
       "id": 1,
@@ -152,7 +152,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": true
     },
     {
       "id": 1,
@@ -174,7 +174,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": true
     },
     {
       "id": 1,
@@ -196,7 +196,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": false
     },
     {
       "id": 1,
@@ -218,7 +218,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": false
     },
     {
       "id": 1,
@@ -240,7 +240,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": true
     },
     {
       "id": 1,
@@ -262,7 +262,7 @@
       "pessoa": "PF",
       "produto": "net",
       "financiamento": "cdc",
-      "status": "Ativo"
+      "status": true
     }
   ]
 }

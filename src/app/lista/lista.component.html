@@ -3,10 +3,10 @@
         <div>
             <mat-checkbox>Ativo</mat-checkbox>
         </div>
-        <div>
-            <mat-icon aria-hidden="false" aria-label="Example home icon">create</mat-icon>
-            <mat-icon aria-hidden="false" aria-label="Example home icon">send</mat-icon>
-            <mat-icon aria-hidden="false" aria-label="Example home icon">restore_from_trash</mat-icon>
+        <div class=icons-card>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"> create  </mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"> send  </mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"> restore_from_trash  </mat-icon>
         </div>
     </div>
     <div class="middle-card">
@@ -14,6 +14,26 @@
         <mat-card-content>Período de revisão: {{p.periodo_ano}} | {{p.periodo_meses}} | {{p.periodo_km}}</mat-card-content>
     </div>
     <mat-card-content class="botton-card">
+        <span> 
+            <strong>Marca :</strong> {{p.marca}}
+        </span>
+        <span> 
+            <strong>Modelo :</strong> {{p.modelo}} 
+        </span>
+        <span> 
+            <strong>Versão :</strong> {{p.versao}} 
+        </span>
+        <span> 
+            <strong>Ano Fabricação :</strong> {{p.ano_fabricacao}}
+        </span>
+        <span> 
+            <strong>Ano Modelo:</strong> {{p.ano_modelo}}
+        </span>
+        <span> 
+            <strong>Preços: </strong> {{p.preco}}
+        </span>
+    </mat-card-content>
+    <!-- <mat-card-content class="botton-card">
         <span> 
             Marca : {{p.marca}}
         </span>
@@ -32,7 +52,6 @@
         <span> 
             Preço: {{p.preco}}
         </span>
-    </mat-card-content>
+    </mat-card-content> -->
 
- 
 </mat-card>
