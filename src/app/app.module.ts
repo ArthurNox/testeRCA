@@ -9,6 +9,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms'; 
 import { FormsModule }   from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +36,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatFormFieldModule,
     MatSelectModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ],
   providers: [APIService],
   bootstrap: [AppComponent]

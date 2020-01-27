@@ -1,6 +1,10 @@
-.mat-card{
+.filter-content{
     background-color: #CCCCCC;
     font-family: 'Exo 2', sans-serif;
+    width: 20vw;
+    min-width: 300px;
+    margin-right: 20px;
+    box-sizing: border-box;
 }
 
 .mat-card-title{
@@ -17,4 +21,22 @@
 .card-content-checkbox{
     display: flex;
     flex-direction: column;
+}
+
+.button-full{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    color:#FFFFFF;
+    background-color: #F87900;
+}
+
+.button-empty{
+    display: block;
+    width: 100%;
+    color: #F87900;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
 }

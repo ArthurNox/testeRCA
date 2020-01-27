@@ -1,10 +1,38 @@
-<mat-card *ngFor="let p of produtos">
- 
-<mat-card-title>{{p.servico}}</mat-card-title>
- 
-<mat-card-subtitle>{{p.marca}}</mat-card-subtitle>
-<mat-card-subtitle>{{p.modelo}}</mat-card-subtitle>
- 
-<mat-card-content>Conteúdo do card!</mat-card-content>
+<mat-card class="list-content" *ngFor="let p of produtos">
+    <div class="top-card">
+        <div>
+            <mat-checkbox>Ativo</mat-checkbox>
+        </div>
+        <div>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">create</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">send</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">restore_from_trash</mat-icon>
+        </div>
+    </div>
+    <div class="middle-card">
+        <mat-card-subtitle class="subtitle">Serviços: {{p.servico}}   </mat-card-subtitle>
+        <mat-card-content>Período de revisão: {{p.periodo_ano}} | {{p.periodo_meses}} | {{p.periodo_km}}</mat-card-content>
+    </div>
+    <mat-card-content class="botton-card">
+        <span> 
+            Marca : {{p.marca}}
+        </span>
+        <span> 
+            Modelo: {{p.modelo}} 
+        </span>
+        <span> 
+            Versão: {{p.versao}} 
+        </span>
+        <span> 
+            Ano de Fabricação: {{p.ano_fabricacao}}
+        </span>
+        <span> 
+            Ano modelo : {{p.ano_modelo}}
+        </span>
+        <span> 
+            Preço: {{p.preco}}
+        </span>
+    </mat-card-content>
+
  
 </mat-card>

@@ -1,4 +1,32 @@
-.mat-card{
+.list-content{
+    display: block;
+    width: 77vw;
     background-color: #FAFAFA;
     margin-top: 20px;
+    box-sizing: border-box;
+   
+}
+
+.top-card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.middle-card{
+    display: flex;
+
+}
+
+.middle-card > .subtitle{
+    margin-right: 10px;
+}
+
+.botton-card {
+    display: flex;
+}
+
+.botton-card  span {
+    display: block;
+    padding: 0 10px;
 }

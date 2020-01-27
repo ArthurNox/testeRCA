@@ -1,5 +1,4 @@
-<mat-card>
- 
+<mat-card class="filter-content">
     <mat-card-title>Filtrar</mat-card-title>
     <hr/>
     <div class="card-content-checkbox">
@@ -30,9 +29,9 @@
 
     <div class="card-content-combobox">
         <mat-card-subtitle>Modelo do Veículo</mat-card-subtitle> 
-        <mat-form-field>
-            <mat-label>Selecionar</mat-label>
-            <mat-select [(ngModel)]="selectedValue" name="marca">
+        <mat-form-field >
+            <mat-label >Selecionar</mat-label>
+            <mat-select  [(ngModel)]="selectedValue" name="marca">
               <mat-option *ngFor="let marca of marcas" [value]="marcas.value">
                 {{marca.viewValue}}
               </mat-option>
@@ -105,5 +104,8 @@
             </mat-select>
           </mat-form-field>
     </div>
+
+    <button class="button-full" mat-raised-button>Filtrar</button>
+    <button class="button-empty" mat-raised-button>Limpar Filtros</button>
      
 </mat-card>
