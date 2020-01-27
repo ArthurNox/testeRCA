@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { APIService } from '../api.service';
+import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 @Component({
   selector: 'app-lista',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista.component.css']
 })
 export class ListaComponent implements OnInit {
+;
+  produtos: Array<any>
 
-  constructor() { }
+  constructor(private apiService: APIService ) { }
 
   ngOnInit() {
+    this.listar();
   }
+  listar(){
+    this.apiService.listar().subscribe(produto => this.produtos = produto) 
+  }
+
 
 }

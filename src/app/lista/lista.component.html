@@ -1,1 +1,10 @@
-<p>lista works!</p>
+<mat-card *ngFor="let p of produtos">
+ 
+<mat-card-title>{{p.servico}}</mat-card-title>
+ 
+<mat-card-subtitle>{{p.marca}}</mat-card-subtitle>
+<mat-card-subtitle>{{p.modelo}}</mat-card-subtitle>
+ 
+<mat-card-content>Conteúdo do card!</mat-card-content>
+ 
+</mat-card>

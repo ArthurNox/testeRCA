@@ -1,0 +1,109 @@
+<mat-card>
+ 
+    <mat-card-title>Filtrar</mat-card-title>
+    <hr/>
+    <div class="card-content-checkbox">
+        <mat-card-subtitle>Tipo de Pessoa</mat-card-subtitle>
+        <mat-checkbox>Pessoa Física</mat-checkbox>
+        <mat-checkbox>pessoa jurídica</mat-checkbox>
+    </div>
+
+    <div class="card-content-checkbox">
+        <mat-card-subtitle>Tipo de Venda</mat-card-subtitle>
+        <mat-checkbox>Venda direta</mat-checkbox>
+        <mat-checkbox>Usado</mat-checkbox>
+        <mat-checkbox>Showroom</mat-checkbox>
+    </div>
+
+    <div class="card-content-checkbox">
+        <mat-card-subtitle>Tipo de Finnciamento</mat-card-subtitle>
+        <mat-checkbox>CDC</mat-checkbox>
+        <mat-checkbox>CDC Flex</mat-checkbox>
+        <mat-checkbox>Showroom</mat-checkbox>
+    </div>
+
+    <div class="card-content-checkbox">
+        <mat-card-subtitle>Tipo de Produto</mat-card-subtitle>
+        <mat-checkbox>Capmanha</mat-checkbox>
+        <mat-checkbox>Net</mat-checkbox>
+    </div>
+
+    <div class="card-content-combobox">
+        <mat-card-subtitle>Modelo do Veículo</mat-card-subtitle> 
+        <mat-form-field>
+            <mat-label>Selecionar</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="marca">
+              <mat-option *ngFor="let marca of marcas" [value]="marcas.value">
+                {{marca.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="card-content-combobox">
+        <mat-card-subtitle>Modelo do Veículo</mat-card-subtitle>
+        <mat-form-field>
+            <mat-label>Selecionar</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="modelo">
+              <mat-option *ngFor="let modelo of modelos" [value]="modelos.value">
+                {{modelo.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="card-content-combobox">
+        <mat-card-subtitle>Versão do Veículo</mat-card-subtitle>
+        <mat-form-field>
+            <mat-label>Selecionar</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="modelo">
+              <mat-option *ngFor="let versao of versoes" [value]="versoes.value">
+                {{versao.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <!-- <div class="card-content-single">
+        <mat-card-subtitle>Ano</mat-card-subtitle>
+        <mat-form-field>
+            <input type="number">
+        </mat-form-field>
+    </div> -->
+
+    <div class="card-content-combobox">
+        <mat-card-subtitle>Período de revisão(anos)</mat-card-subtitle> 
+        <mat-form-field>
+            <mat-label>Selecionar</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="ano">
+              <mat-option *ngFor="let ano of anos" [value]="anos.value">
+                {{ano.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="card-content-combobox">
+        <mat-card-subtitle>Período de revisão(meses)</mat-card-subtitle> 
+        <mat-form-field>
+            <mat-label>Selecionar</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="mes">
+              <mat-option *ngFor="let mes of meses" [value]="meses.value">
+                {{mes.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="card-content-combobox">
+        <mat-card-subtitle>Período de revisão(kms)</mat-card-subtitle> 
+        <mat-form-field>
+            <mat-label>Selecionar</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="km">
+              <mat-option *ngFor="let km of kms" [value]="kms.value">
+                {{km.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+     
+</mat-card>
